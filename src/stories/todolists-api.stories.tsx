@@ -5,12 +5,6 @@ export default {
     title: 'API'
 }
 
-// const settings = {
-//     withCredentials: true,
-//     headers: {
-//         'API-KEY': '7927a783-5afd-4ad3-9f9c-1cf089c72577'
-//     }
-// }
 
 export const GetTodolists = () => {
     const [state, setState] = useState<any>(null)

@@ -18,19 +18,11 @@ beforeEach(()=>{
 })
 
 test('current todo should be deleted',()=>{
-
     const endState = todolistsReducer(startState,removeTodolistAC('id'))
     expect(endState.length).toBe(0)
 })
 
 test('correctly title and todo should be added',()=>{
-    // const newTodo = {
-    //     id: '',
-    //     title: '',
-    //     addedDate: '',
-    //     order: 0,
-    //     filter:'all'
-    // }
     const endState = todolistsReducer(startState,addTodolistAC('newTitle'))
     expect(endState[0].title).toBe('newTitle')
     expect(endState.length).toBe(2)

@@ -55,8 +55,8 @@ export const tasksReducer = (state: TasksStateType = initialState, action: Actio
                 priority: TaskPriorities.Later,
                 startDate: 0,
                 deadline:1 ,
-                addedDate: `1224`,
-                description: `wdwefef`,
+                addedDate: ``,
+                description: ``,
                 todoListId: action.todolistId,
                 order: 1,
             }

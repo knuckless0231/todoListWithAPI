@@ -20,7 +20,7 @@ import {
 import { addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC } from './state/tasks-reducer';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppRootStateType } from './state/store';
-import {TaskType} from "./api/todolist-api";
+import {TaskType} from "./state/tasks-reducer";
 
 
 export type FilterValuesType = 'all' | 'active' | 'completed';
